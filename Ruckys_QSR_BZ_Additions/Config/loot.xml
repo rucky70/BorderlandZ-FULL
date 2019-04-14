@@ -1,0 +1,142 @@
+<configs>
+
+	<!-- additional BorderlandZ-Changes -->
+
+	<setattribute xpath="/lootcontainers/lootgroup[contains(@name,'BZ_HYPERION_')]/item[contains(@name,'mod')]" name="quality">101,140</setattribute>
+	<setattribute xpath="/lootcontainers/lootgroup[contains(@name,'BZ_HYPERIONDemo_')]/item[contains(@name,'mod')]" name="quality">201,255</setattribute>
+	<setattribute xpath="/lootcontainers/lootgroup[contains(@name,'BZ_HYPERIONMod')]/item[contains(@name,'mod')]" name="quality">101,220</setattribute>
+
+	<set xpath="/lootcontainers/lootgroup/item[@quality='1,2']/@quality">61,100</set>
+	<set xpath="/lootcontainers/lootgroup/item[@quality='2,2']/@quality">81,120</set>
+	<set xpath="/lootcontainers/lootgroup/item[@quality='3,3']/@quality">121,160</set>
+	<set xpath="/lootcontainers/lootgroup/item[@quality='4,4']/@quality">161,200</set>
+
+	<!-- <append xpath="/lootcontainers[lootgroup/@name='weaponsPistol+ammo'/item/@name='gunPistolEpic']/lootgroup[@name='QSR-Test-Suitcase']"> some error -->
+	<append xpath="/lootcontainers/lootgroup[@name='QSR-Test-Suitcase']">
+		<item name="gunPistolEpic" quality="161,161"/>
+		<item name="gunPistolEpic" quality="164,164"/>
+		<item name="gunPistolEpic" quality="167,167"/>
+		<item name="gunPistolEpic" quality="169,169"/>
+		<item name="gunPistolEpic" quality="171,171"/>
+		<item name="gunPistolEpic" quality="173,173"/>
+		<item name="gunPistolEpic" quality="176,176"/>
+		<item name="gunPistolEpic" quality="179,179"/>
+		<item name="gunPistolEpic" quality="181,181"/>
+		<item name="gunPistolEpic" quality="184,184"/>
+		<item name="gunPistolEpic" quality="187,187"/>
+		<item name="gunPistolEpic" quality="189,189"/>
+		<item name="gunPistolEpic" quality="191,191"/>
+		<item name="gunPistolEpic" quality="193,193"/>
+		<item name="gunPistolEpic" quality="196,196"/>
+		<item name="gunPistolEpic" quality="199,199"/>
+		<item name="gunPistolEpic" quality="210,210"/>
+		<item name="gunPistolEpic" quality="230,230"/>
+		<item name="gunPistolEpic" quality="241,241"/>
+		<item name="gunPistolEpic" quality="245,245"/>
+		<item name="gunPistolEpic" quality="250,250"/>
+		<item name="gunPistolEpic" quality="251,251"/>
+		<item name="gunPistolEpic" quality="255,255"/>
+		<item name="gunPistolEpic" quality="255,255"/>
+	</append>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='gunPistolEpic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='HDHQPistolEpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='gun44MagnumEpic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='HDHQ44MagnumEpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='gunPumpShotgunEpic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='HDHQPumpShotgunEpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='gunSMG5Epic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='HDHQSMG5EpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='gunAK47Epic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='HDHQAK47EpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='gunHuntingRifleEpic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='HDHQHuntingRifleEpicArmorWinter']/@prob">0.0035</set>
+
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='gunMR10Epic']/@prob">0.007</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicAnoBlue']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicAnoCyan']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicAnoGreen']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicAnoMagenta']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicAnoRed']/@prob">0.0015</set>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicGold']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicSilver']"/>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicJade']/@prob">0.0015</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicCamoDigital']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicCamoDesert']/@prob">0.0025</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicArmorJungle']/@prob">0.005</set>
+	<set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='HDHQMR10EpicArmorWinter']/@prob">0.0035</set>
+
+	<setattribute xpath="/lootcontainers/lootgroup[contains(@name,'weapons') and contains(@name,'+ammo')]/item[contains(@name,'Epic')]" name="quality">201,255</setattribute>
+
+</configs>

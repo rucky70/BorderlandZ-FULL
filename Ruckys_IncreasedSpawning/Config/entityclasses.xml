@@ -1,0 +1,29 @@
+<configs>
+
+	<!-- changing viewdistance of Zombies -->
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">60</set> <!-- 30 -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightLightThreshold']/@value">-2,95</set> <!-- -2,150 -->
+
+
+	<!-- change for Mumpfys MumTexturesDark WHEN installed otherwise you will see two WRN messages, that can be ignored then! -->
+
+	<append xpath="/entity_classes/entity_class[contains(@name,'V1')]">
+		<effect_group name="Base Effects">
+			<passive_effect name="WalkSpeed" operation="perc_add" value="-0.4"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="-0.5"/>
+			<passive_effect name="HealthMax" operation="perc_add" value="2"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[contains(@name,'V2')]">
+		<effect_group name="Base Effects">
+			<passive_effect name="WalkSpeed" operation="perc_add" value="4"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="5"/>
+			<passive_effect name="HealthMax" operation="perc_add" value="-0.5"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-0.5"/>
+		</effect_group>
+	</append>
+
+</configs>

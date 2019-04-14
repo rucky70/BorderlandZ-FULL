@@ -1,0 +1,169 @@
+<configs>
+
+	<!-- Quality levels:
+		0 :   0 -40
+		1 :  41 -80
+		2 :  81-120
+		3 : 121-160
+		4 : 161-200
+		5 : 201-225  226-240
+		6 : 241-250  251-255
+	-->
+
+	<!-- EPIC Guns : no rand but will have that already incorporated! -->
+
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >50,75</set> <!-- 50 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >22,33</set> <!-- 18 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='perc_add']/@value"               >0.0,0.27</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >190,210</set> <!-- 180 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >13,20</set> <!-- 15 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.95,0.85</set> <!-- 1 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.40,0.31</set> <!-- .4 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- .8 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >2.2,1.9</set> <!-- 2.2 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">1.5,1.3</set> <!-- 1.6 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >1.0,1.3</set> <!-- 0.95 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >450,750</set> <!-- 250,500 -->
+	<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<!--<set xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >1,1</set> -->
+	<setattribute xpath="/items/item[contains(@name,'PistolEpic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >60,90</set> <!-- 60 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >30,40</set> <!-- 20 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='perc_add']/@value"               >0.0,0.27</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >80,100</set> <!-- 80 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >5,9</set> <!-- 6 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.95,0.85</set> <!-- 1 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >1.3,1.1</set> <!-- 1.3 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >1.3,1.1</set> <!-- 1.3 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.35,0.25</set> <!-- .35 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- .8 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >2.2,1.9</set> <!-- 2.2 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">2.5,2.1</set> <!-- 2.5 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >0.45,0.75</set> <!-- 0.6 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >4500,8500</set> <!-- 3500,7000 -->
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >10,8</set> <!-- 12 -->
+	<setattribute xpath="/items/item[contains(@name,'44MagnumEpic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >65,95</set> <!-- 65 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >35,45</set> <!-- 30 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='base_subtract']/@value"               >6,-1</set> <!-- 6 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >480,650</set> <!-- 500 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >30,40</set> <!-- 30 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.95,0.85</set> <!-- 1 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >1.35,1.15</set> <!-- 1.35 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >1.35,1.15</set> <!-- 1.35 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.35,0.25</set> <!-- .35 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- .8 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >2.2,1.9</set> <!-- 2.2 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">1.4,1.15</set> <!-- 1.35 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >0.7,1.0</set> <!-- 0.8 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >9000,17000</set> <!-- 7000,14000 -->
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >12,10</set> <!-- 18 -->
+	<setattribute xpath="/items/item[contains(@name,'SMG5Epic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<append xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']"><passive_effect name="MaxRange" operation="perc_add" value="0.1,0.30"/></append>
+	<append xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']"><passive_effect name="DamageFalloffRange" operation="perc_add" value="0.05,0.25"/></append>
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='perc_add']/@value"               >0.0,0.27</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> <!-- 0 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >60,80</set> <!-- 60 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >8,10</set> <!-- 8 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.95,0.85</set> <!-- 1 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<append xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']"><passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-0.05,-0.25"/></append>
+	<append xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']"><passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-0.05,-0.25"/></append>
+	<!--<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.35,0.25</set> -->
+	<!--<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> -->
+	<!--<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> -->
+	<!--<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >2.2,1.9</set> -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">1.9,1.75</set> <!-- 2 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >1.75,2.05</set> <!-- 1.7 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >3500,6000</set> <!-- 2500,4500 -->
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >9,7</set> <!-- 9 -->
+	<setattribute xpath="/items/item[contains(@name,'PumpShotgunEpic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >135,170</set> <!-- 150 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >60,75</set> <!-- 60 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value"               >8,21</set> <!-- 5 -->
+	<!--<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> 0 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >115,165</set> <!-- 120 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >1.1,1.95</set> <!-- 1 yes I know needs to be INT but this way we get in a very rare variant a 2 shot HR!! -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.80,0.70</set> <!-- 0.81 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >4.25,3.25</set> <!-- 5 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >4.25,3.25</set> <!-- 5 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.045,0.025</set> <!-- 0.048 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- 0.8 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >1.95,1.7</set> <!-- 2 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">1.95,1.65</set> <!-- 2 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >0.6,0.9</set> <!-- 0.65 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >3500,6500</set> <!-- 3100,6200 -->
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >13,10</set> <!-- 15 -->
+	<setattribute xpath="/items/item[contains(@name,'HuntingRifleEpic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >145,180</set> <!-- 150 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >68,93</set> <!-- 70 -->
+	<append xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']"><passive_effect name="EntityDamage" operation="perc_add" value="0.0,0.3"/></append>
+	<append xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']"><passive_effect name="BlockDamage" operation="perc_add" value="0.0,0.1"/></append>
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >158,173</set> <!-- 150 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >5,7</set> <!-- 5 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.95,0.85</set> <!-- 1 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >5.25,4.25</set> <!-- 6 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >5.25,4.25</set> <!-- 6 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.04,0.025</set> <!-- 0.04 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- 0.8 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >1.9,1.7</set> <!-- 2 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">2.1,1.8</set> <!-- 2.2 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >0.7,1.0</set> <!-- 0.7 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >5000,9500</set> <!-- 4400,8800 -->
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >20,17</set> <!-- 21 -->
+	<setattribute xpath="/items/item[contains(@name,'MR10Epic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+	
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange' and @operation='base_set']/@value"                   >90,115</set> <!-- 90 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value"         >50,65</set> <!-- 50 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value"               >-7,1</set> <!-- -8 -->
+	<!--<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage' and @operation='perc_add']/@value"                >0.0,0.1</set> 0 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value"            >400,500</set> <!-- 400 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value"               >30,40</set> <!-- 30 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value"      >0.5,0.4</set> <!-- .5 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@value"                   >3,8</set> <!-- 0,5 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='ModSlots' and @operation='base_set']/@tier"                    >1,255</set>
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical' and @operation='base_set']/@value"      >2.6,2.45</set> <!-- 2.8 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal' and @operation='base_set']/@value"    >2.6,2.45</set> <!-- 2.8 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierAiming' and @operation='base_set']/@value"     >0.18,0.08</set> <!-- .15 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierCrouching' and @operation='base_set']/@value"  >0.8,0.65</set> <!-- .8 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierWalking' and @operation='base_set']/@value"    >1.5,1.3</set> <!-- 1.5 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='SpreadMultiplierRunning' and @operation='base_set']/@value"    >2.2,1.9</set> <!-- 2.2 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='IncrementalSpreadMultiplier' and @operation='base_set']/@value">1.5,1.25</set> <!-- 1.55 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value"             >0.65,0.9</set> <!-- 0.7 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value"             >9000,17000</set> <!-- 7000,14000 -->
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax' and @operation='base_set']/@tier"              >1,255</set>
+	<set xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value"          >14,10</set> <!-- 16 -->
+	<setattribute xpath="/items/item[contains(@name,'AK47Epic')]/effect_group[@name='Base Effects']/passive_effect[not(@name='DamageModifier') and not(@name='BurstRoundCount') and not(@name='ModPowerBonus') and not(@name='KickDegreesVertical') and not(@name='KickDegreesHorizontal') and not(@name='DegradationMax') and not(@name='DegradationPerUse') and not(@name='ModSlots')]" name="tier">1,255</setattribute>
+
+</configs>

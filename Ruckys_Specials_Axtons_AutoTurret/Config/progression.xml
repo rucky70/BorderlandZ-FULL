@@ -1,0 +1,203 @@
+<configs>
+
+	<insertAfter xpath="/progression/attributes/attribute[@name='attIntellect']">	
+	<attribute name="ActionSkill" base_skill_point_cost="2" cost_multiplier_per_level="1.2" name_key="attActionSkillName" desc_key="attActionSkillDesc" icon="ui_game_symbol_character">
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="32" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="85" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="135" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqGenericPoints05"/></level_requirements>
+
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="ranged"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.0,0.7" level="1,20"/>
+
+			<effect_description level="1" desc_key="attActionSkillRank1Desc"/>
+			<effect_description level="2" desc_key="attActionSkillRank2Desc"/>
+			<effect_description level="3" desc_key="attActionSkillRank3Desc"/>
+			<effect_description level="4" desc_key="attActionSkillRank4Desc"/>
+			<effect_description level="5" desc_key="attActionSkillRank5Desc"/>
+			<effect_description level="6" desc_key="attActionSkillRank6Desc"/>
+			<effect_description level="7" desc_key="attActionSkillRank7Desc"/>
+			<effect_description level="8" desc_key="attActionSkillRank8Desc"/>
+			<effect_description level="9" desc_key="attActionSkillRank9Desc"/>
+			<effect_description level="10" desc_key="attActionSkillRank10Desc"/>
+		</effect_group>
+	</attribute>	
+	</insertAfter>
+
+	<append xpath="/progression/skills">
+		<skill name="skillAxton" parent="ActionSkill" name_key="skillAxtonName" desc_key="skillAxtonDesc" icon="ui_game_symbol_explosion"><effect_group/></skill>
+		<skill name="skillSalvadore" parent="ActionSkill" name_key="skillSalvadoreName" desc_key="skillSalvadoreDesc" icon="ui_game_symbol_gunslinger"><effect_group/></skill>
+		<skill name="skillBrick" parent="ActionSkill" name_key="skillBrickName" desc_key="skillBrickDesc" icon="ui_game_symbol_boxer"><effect_group/></skill>
+	
+	</append>
+
+	<insertBefore xpath="/progression/perks/perk[@name='perkGunslinger']">	
+	<perk name="perkAxtonTurret" parent="skillAxton" max_level="5" base_skill_point_cost="2" cost_multiplier_per_level="1.2" name_key="perkAxtonTurretName" desc_key="perkAxtonTurretDesc" icon="ui_game_symbol_explosion">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="1" desc_key="reqActionSkill01-1"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="3" desc_key="reqActionSkill03-32"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="32" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="5" desc_key="reqActionSkill05-70"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="70" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="7" desc_key="reqActionSkill07-100"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="10" desc_key="reqActionSkill10-150"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="150" desc_key="reqAttributeLevelDummy"/></level_requirements>
+	
+		<effect_group>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="self" buff="buffBZAutoTurretWaiting">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarAxton" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarAxton" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarAxton" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarAxton" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarAxton" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarAxton" operation="set" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkAxtonTurret" target="self" operation="Equals" value="5"/>
+			</triggered_effect>
+
+			<!-- testing
+			<triggered_effect trigger="onSelfProgressionUpdate" action="CVarLogValue" target="self" cvar="$CVarAxton"/>
+			-->
+
+			<effect_description level="1" desc_key="perkAxtonTurretRank1Desc"/>
+			<effect_description level="2" desc_key="perkAxtonTurretRank2Desc"/>
+			<effect_description level="3" desc_key="perkAxtonTurretRank3Desc"/>
+			<effect_description level="4" desc_key="perkAxtonTurretRank4Desc"/>
+			<effect_description level="5" desc_key="perkAxtonTurretRank5Desc"/>
+		</effect_group>
+	
+	</perk>
+
+	<perk name="perkSalvadoreGunzerking" parent="skillSalvadore" max_level="5" base_skill_point_cost="2" cost_multiplier_per_level="1.2" name_key="perkSalvadoreGunzerkingName" desc_key="perkSalvadoreGunzerkingDesc" icon="ui_game_symbol_gunslinger">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="1" desc_key="reqActionSkill01-1"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="3" desc_key="reqActionSkill03-32"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="32" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="5" desc_key="reqActionSkill05-70"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="70" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="7" desc_key="reqActionSkill07-100"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="10" desc_key="reqActionSkill10-150"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="150" desc_key="reqAttributeLevelDummy"/></level_requirements>
+	
+		<effect_group>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="self" buff="buffBZGunzerkingWaiting">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarSalvadore" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarSalvadore" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarSalvadore" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarSalvadore" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarSalvadore" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarSalvadore" operation="set" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkSalvadoreGunzerking" target="self" operation="Equals" value="5"/>
+			</triggered_effect>
+			
+			<!-- testing
+			<triggered_effect trigger="onSelfProgressionUpdate" action="CVarLogValue" target="self" cvar="$CVarSalvadore"/>
+			-->
+			
+			<effect_description level="1" desc_key="perkSalvadoreGunzerkingRank1Desc"/>
+			<effect_description level="2" desc_key="perkSalvadoreGunzerkingRank2Desc"/>
+			<effect_description level="3" desc_key="perkSalvadoreGunzerkingRank3Desc"/>
+			<effect_description level="4" desc_key="perkSalvadoreGunzerkingRank4Desc"/>
+			<effect_description level="5" desc_key="perkSalvadoreGunzerkingRank5Desc"/>
+		</effect_group>
+	
+	</perk>
+	
+	<perk name="perkBrickBerserking" parent="skillBrick" max_level="5" base_skill_point_cost="2" cost_multiplier_per_level="1.2" name_key="perkBrickBerserkingName" desc_key="perkBrickBerserkingDesc" icon="ui_game_symbol_boxer">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="1" desc_key="reqActionSkill01-1"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="3" desc_key="reqActionSkill03-32"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="32" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="5" desc_key="reqActionSkill05-70"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="70" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="7" desc_key="reqActionSkill07-100"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqAttributeLevelDummy"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="ActionSkill" operation="GTE" value="10" desc_key="reqActionSkill10-150"/>
+								<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="GTE" value="0.9"/>
+								<requirement name="PlayerLevel" operation="GTE" value="150" desc_key="reqAttributeLevelDummy"/></level_requirements>
+	
+		<effect_group>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="self" buff="buffBZBerserkingWaiting">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarBrick" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" target="self" cvar="$CVarBrick" operation="Equals" value="0.9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarBrick" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarBrick" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarBrick" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CVarBrick" operation="set" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkBrickBerserking" target="self" operation="Equals" value="5"/>
+			</triggered_effect>
+			
+			<!-- testing
+			<triggered_effect trigger="onSelfProgressionUpdate" action="CVarLogValue" target="self" cvar="$CVarBrick"/>
+			-->
+			
+			<effect_description level="1" desc_key="perkBrickBerserkingRank1Desc"/>
+			<effect_description level="2" desc_key="perkBrickBerserkingRank2Desc"/>
+			<effect_description level="3" desc_key="perkBrickBerserkingRank3Desc"/>
+			<effect_description level="4" desc_key="perkBrickBerserkingRank4Desc"/>
+			<effect_description level="5" desc_key="perkBrickBerserkingRank5Desc"/>
+		</effect_group>
+	
+	</perk>
+
+	</insertBefore>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='4,5']/@tags">,BZSPShotgunTurret</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='5']/@tags">,BZSPAutoTurret</append>
+
+</configs>

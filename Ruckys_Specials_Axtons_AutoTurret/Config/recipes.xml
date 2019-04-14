@@ -1,0 +1,64 @@
+<configs>
+
+	<append xpath="/recipes" >
+
+	<!-- the different ActionSkills or Characters to choose from -->
+	
+	<recipe name="BZActionSkillAxton" count="1" craft_time="1">
+		<ingredient name="BZchooseActionSkill" count="1"/>
+	</recipe>
+	<recipe name="BZActionSkillSalvadore" count="1" craft_time="1">
+		<ingredient name="BZchooseActionSkill" count="1"/>
+	</recipe>
+	<recipe name="BZActionSkillBrick" count="1" craft_time="1">
+		<ingredient name="BZchooseActionSkill" count="1"/>
+	</recipe>
+
+	<!-- additional recipes -->
+	
+	<recipe name="BZSPAutoTurret" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="autoTurret" count="1"/>
+		<ingredient name="carBattery" count="4"/>
+		<ingredient name="resourceForgedSteel" count="8"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceDuctTape" count="8"/>
+	</recipe>
+
+	<recipe name="BZSPShotgunTurret" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="shotgunTurret" count="1"/>
+		<ingredient name="carBattery" count="4"/>
+		<ingredient name="resourceForgedSteel" count="8"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceDuctTape" count="8"/>
+	</recipe>
+
+	</append>
+	
+	<!-- changed vanilla recipes -->
+	
+	<remove xpath="/recipes/recipe[@name='autoTurret']" />
+	<remove xpath="/recipes/recipe[@name='shotgunTurret']" />
+	
+	<append xpath="/recipes" >
+
+	<recipe name="autoTurret" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="gunSMG5" count="1"/>
+		<ingredient name="motionsensor" count="1"/>
+		<ingredient name="resourceForgedSteel" count="80"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="15"/>
+		<ingredient name="resourceDuctTape" count="5"/>
+	</recipe>
+
+	<recipe name="shotgunTurret" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="gunPumpShotgun" count="1"/>	
+		<ingredient name="motionsensor" count="1"/>
+		<ingredient name="resourceForgedSteel" count="80"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="15"/>
+		<ingredient name="resourceDuctTape" count="5"/>
+	</recipe>
+
+	</append>
+	
+</configs>

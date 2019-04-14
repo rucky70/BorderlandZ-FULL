@@ -1,0 +1,8 @@
+<configs>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerGiant']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax' and @operation='base_set']/@value">7500</set> <!-- 7000 -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerGiant']/effect_group[@name='Base Effects']/passive_effect[@name='PhysicalDamageResist']/@value">10</set> <!-- 60 -->
+
+	<set xpath="/entity_classes/entity_class[@name='animalAnaconda']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax' and @operation='base_set']/@value">900</set> <!-- 1300 -->
+
+</configs>

@@ -1,0 +1,69 @@
+<configs>
+
+	<insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']">
+
+		<window_group name="workstation_laptop" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>				
+
+		<window_group name="workstation_smallWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>				
+
+		<window_group name="workstation_cntCollapsedWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>				
+
+		<window_group name="workstation_cntCollapsedCementMixer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+
+		<window_group name="workstation_cntCollapsedChemistryStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_cntCollapsedForge" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+	</insertAfter>
+
+	<!-- add the Combie Feature also to the smallWorkbench when it's available! -->	
+
+	<append xpath="/xui/ruleset[window_group/window/@name='windowCombine']/window_group[@name='workstation_cntCollapsedWorkbench']">
+		<window name="windowCombine" />
+	</append>
+
+	<append xpath="/xui/ruleset[window_group/window/@name='windowCombine']/window_group[@name='workstation_smallWorkbench']">
+		<window name="windowCombine" />
+	</append>
+
+</configs>

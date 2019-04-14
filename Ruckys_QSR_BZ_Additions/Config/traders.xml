@@ -1,0 +1,79 @@
+<configs>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='VanillaGuns']">
+		<item name="gunPistolEpic" prob=".004" quality="5,7"/>
+		<item name="gun44MagnumEpic" prob=".0005" quality="5,7"/>
+		<item name="gunPumpShotgunEpic" prob=".003" quality="5,7"/>
+		<item name="gunSMG5Epic" prob=".002" quality="5,7"/>
+		<item name="gunAK47Epic" prob=".001" quality="5,7"/>
+		<item name="gunHuntingRifleEpic" prob=".0015" quality="5,7"/>
+		<item name="gunMR10Epic" prob=".0003" quality="5,7"/>
+		<!--<item name="gunRocketLauncherEpic" prob=".0001" quality="5,7"/>-->
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='HDHQGuns']">
+		<item name="HDHQPistolEpicCamoDigital" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicArmorJungle" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicArmorWinter" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicCamoDesert" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicAnoBlue" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicAnoCyan" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicAnoRed" prob=".004" quality="5,7"/>
+		<item name="HDHQPistolEpicJade" prob=".004" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicCamoDigital" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicArmorJungle" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicArmorWinter" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicCamoDesert" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicAnoBlue" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicAnoCyan" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicAnoRed" prob=".0005" quality="5,7"/>
+		<item name="HDHQ44MagnumEpicJade" prob=".0005" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicCamoDigital" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicArmorJungle" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicArmorWinter" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicCamoDesert" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicAnoBlue" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicAnoCyan" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicAnoRed" prob=".003" quality="5,7"/>
+		<item name="HDHQPumpShotgunEpicJade" prob=".003" quality="5,7"/>
+		<item name="HDHQSMG5EpicCamoDigital" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicArmorJungle" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicArmorWinter" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicCamoDesert" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicAnoBlue" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicAnoCyan" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicAnoRed" prob=".002" quality="5,7"/>
+		<item name="HDHQSMG5EpicJade" prob=".002" quality="5,7"/>
+		<item name="HDHQAK47EpicCamoDigital" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicArmorJungle" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicArmorWinter" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicCamoDesert" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicAnoBlue" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicAnoCyan" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicAnoRed" prob=".001" quality="5,7"/>
+		<item name="HDHQAK47EpicJade" prob=".001" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicCamoDigital" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicArmorJungle" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicArmorWinter" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicCamoDesert" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicAnoBlue" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicAnoCyan" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicAnoRed" prob=".0015" quality="5,7"/>
+		<item name="HDHQHuntingRifleEpicJade" prob=".0015" quality="5,7"/>
+		<item name="HDHQMR10EpicCamoDigital" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicArmorJungle" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicArmorWinter" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicCamoDesert" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicAnoBlue" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicAnoCyan" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicAnoRed" prob=".0003" quality="5,7"/>
+		<item name="HDHQMR10EpicJade" prob=".0003" quality="5,7"/>	
+	</append>
+
+	<set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='1,4']/@quality">30,200</set>
+	<set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='5,6']/@quality">201,250</set> <!-- not 255 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='5,7']/@quality">201,255</set> <!-- special -->
+
+	<set xpath="/traders/@quality_mod">2,5</set> <!-- 0.4,8 -->
+
+</configs>

@@ -1,0 +1,245 @@
+<config>
+
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival2']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival3']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival4']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival5']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival6']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival7']" />
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival8']" />
+
+	<insertBefore xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" >		
+	<quest id="quest_BasicSurvival1">
+		<property name="group_name_key" value="quest_BasicSurvival" />
+		<property name="name_key" value="quest_BasicSurvival1" />
+		<property name="subtitle" value="Craft a Stone Axe" />
+		<property name="subtitle_key" value="quest_BasicSurvival2_subtitle" />
+		<property name="description_key" value="quest_BasicSurvival2_description" />
+		<property name="icon" value="ui_game_symbol_hammer" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_BasicSurvival_offer" />
+		<property name="shareable" value="false" />
+
+		<action type="TrackQuest" />
+		<objective type="FetchKeep" id="resourceYuccaFibers" value="2" phase="1" />
+		<objective type="FetchKeep" id="resourceWood" value="2" phase="1" />
+		<objective type="FetchKeep" id="resourceRockSmall" value="4" phase="1" />
+
+		<objective type="Craft">
+			<property name="phase" value="2" />
+			<property name="item" value="meleeToolStoneAxe" />
+			<property name="count" value="1" />
+		</objective>
+
+		<reward type="Item" id="questRereadIntro" value="1" chainreward="true" />
+		<reward type="SkillPoints" value="16" chainreward="true" /> <!-- in sum 50 to start -->
+		<reward type="Exp" value="200000" /> <!-- (350000 level 50) 200000 level 35 -->
+		<reward type="Quest" id="quest_whiteRiverCitizen1"><property name="chainquest" value="false" /></reward>
+	</quest>	
+	</insertBefore>
+
+	<set xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/property[@name='description_key']/@value">quest_WhiteRiverCitizen1_description2</set>
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']" />
+	<append xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
+		<reward type="SkillPoints" value="5" chainreward="true" />
+		<reward type="Item" id="cntHYPERIONCrateTechPackageLocked" value="1" chainreward="true" />
+		<!--<reward type="Quest" id="quest_killSomeZeds1"><property name="chainquest" value="false" /></reward>-->
+		<reward type="Item" id="questKillSomeZombies" value="1" chainreward="true" />
+		<reward type="Exp" value="150000" /> <!-- so at level 50 when here -->
+	</append>
+
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" >		
+	<quest id="quest_rereadIntro">
+		<property name="group_name_key" value="quest_rereadIntro" />
+		<property name="name_key" value="quest_rereadIntro" />
+		<property name="subtitle_key" value="quest_rereadIntro_subtitle" />
+		<property name="description_key" value="quest_rereadIntro_descr" />
+		<property name="offer_key" value="quest_rereadIntro_offer" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+
+		<action type="ShowTip" value="tutorialTipQuest01w"/>
+		
+		<!--<reward type="Item" id="questRereadIntro" value="1" />-->
+	</quest>
+	<quest id="quest_killSomeZeds1">
+		<property name="group_name_key" value="quest_killSomeZeds" />
+		<property name="name_key" value="quest_killSomeZeds1" />
+		<property name="subtitle_key" value="quest_killSomeZeds1_subtitle" />
+		<property name="description_key" value="quest_killSomeZeds1_descr" />
+		<property name="offer_key" value="quest_killSomeZeds1_offer" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="medium" />
+		<property name="shareable" value="false" />
+
+		<!--<action type="ShowTip" value="quest_killSomeZeds1_tip"/>-->
+		
+		<objective type="ZombieKill" value="100" phase="1" /> <!-- without id="zombiexxx" is any zombietype -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<reward type="SkillPoints" value="5" chainreward="true" />
+		<!--<reward type="Quest" id="quest_killManyZeds1"><property name="chainquest" value="false" /></reward>-->
+		<reward type="Item" id="questKillManyZombies" value="1" chainreward="true" />
+		<reward type="Exp" value="10000" />
+	</quest>
+	<quest id="quest_killManyZeds1">
+		<property name="group_name_key" value="quest_killManyZeds" />
+		<property name="name_key" value="quest_killManyZeds1" />
+		<property name="subtitle_key" value="quest_killManyZeds1_subtitle" />
+		<property name="description_key" value="quest_killManyZeds1_descr" />
+		<property name="offer_key" value="quest_killManyZeds1_offer" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="medium" />
+		<property name="shareable" value="false" />
+
+		<!--<action type="ShowTip" value="quest_killManyZeds1_tip"/>-->
+		
+		<objective type="ZombieKill" value="300" phase="1" /> <!-- without id="zombiexxx" is any zombietype -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<reward type="SkillPoints" value="15" chainreward="true" />
+		<reward type="Exp" value="30000" />
+	</quest>
+	<quest id="quest_TraderAdvert">
+		<property name="group_name" value="quest_TraderAdvertisement" />
+		<property name="offer_key" value="quest_TraderAdvert_offer" />
+		<property name="name_key" value="quest_TraderAdvert_name" />
+		<property name="subtitle_key" value="quest_TraderAdvert_subtitle" />
+		<property name="description_key" value="quest_TraderAdvert_description" />
+		<property name="icon" value="ui_game_symbol_map_trader" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+		<objective type="Goto" id="trader" value="5" />
+		
+ 		<!--<reward type="Exp" value="1" />-->
+	</quest>
+	
+	<!-- admin stuff -->
+	
+	<quest id="Get_some_XP">
+		<property name="group_name" value="Get some XP" />
+		<property name="offer" value="Get some XP" />
+		<property name="name" value="Get some XP" />
+		<property name="subtitle" value="Get some XP" />
+		<property name="description" value="Get some XP" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="Exp" value="20000" />
+	</quest>	
+	<quest id="Get_high_XP">
+		<property name="group_name" value="Get high XP" />
+		<property name="offer" value="Get high XP" />
+		<property name="name" value="Get high XP" />
+		<property name="subtitle" value="Get high XP" />
+		<property name="description" value="Get high XP" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="Exp" value="200000" />
+	</quest>	
+	<quest id="Get_massive_XP">
+		<property name="group_name" value="Get massive XP" />
+		<property name="offer" value="Get massive XP" />
+		<property name="name" value="Get massive XP" />
+		<property name="subtitle" value="Get massive XP" />
+		<property name="description" value="Get massive XP" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="Exp" value="2000000" />
+	</quest>	
+	<quest id="Get_ultimative_XP">
+		<property name="group_name" value="Get ultimative XP" />
+		<property name="offer" value="Get ultimative XP" />
+		<property name="name" value="Get ultimative XP" />
+		<property name="subtitle" value="Get ultimative XP" />
+		<property name="description" value="Get ultimative XP" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="Exp" value="20000000" />
+	</quest>	
+	<quest id="Get_one_SkillPoint">
+		<property name="group_name" value="Get 1 SkillPoint" />
+		<property name="offer" value="Get 1 SkillPoint" />
+		<property name="name" value="Get 1 SkillPoint" />
+		<property name="subtitle" value="Get 1 SkillPoint" />
+		<property name="description" value="Get 1 SkillPoint" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="SkillPoints" value="1" />
+	</quest>	
+	<quest id="Get_ten_SkillPoints">
+		<property name="group_name" value="Get 10 SkillPoints" />
+		<property name="offer" value="Get 10 SkillPoints" />
+		<property name="name" value="Get 10 SkillPoints" />
+		<property name="subtitle" value="Get 10 SkillPoints" />
+		<property name="description" value="Get 10 SkillPoints" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="SkillPoints" value="10" />
+	</quest>	
+	<quest id="Get_fifty_SkillPoints">
+		<property name="group_name" value="Get 50 SkillPoints" />
+		<property name="offer" value="Get 50 SkillPoints" />
+		<property name="name" value="Get 50 SkillPoints" />
+		<property name="subtitle" value="Get 50 SkillPoints" />
+		<property name="description" value="Get 50 SkillPoints" />
+		<property name="icon" value="ui_game_symbol_coin" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="repeatable" value="true" />
+	
+  		<reward type="SkillPoints" value="50" />
+	</quest>	
+	</insertAfter>
+
+	<!-- making better Zombie Kill Challenges -->
+
+	<set xpath="/quests/quest[contains(@id,'challenge')]/action[@type='SpawnEnemy' and @value='5']/@value">20</set>
+	<set xpath="/quests/quest[contains(@id,'challenge')]/objective[@type='ZombieKill' and @value='3']/@value">15</set>
+	<set xpath="/quests/quest[contains(@id,'challenge')]/action[@type='SpawnEnemy' and @value='2']/@value">6</set>
+	<set xpath="/quests/quest[contains(@id,'challenge')]/objective[@type='ZombieKill' and @value='1']/@value">4</set>
+	<set xpath="/quests/quest[contains(@id,'challenge')]/objective[@type='ZombieKill' and @value='2']/@value">5</set>
+	<insertAfter xpath="/quests/quest[contains(@id,'challenge')]/reward[@type='Item']" >
+		<reward type="LootItem" id="questAmmoBZ" ischosen="true" isfixed="true" value="16" />
+		<reward type="LootItem" id="questModsBZ" ischosen="true" isfixed="true" value="16" />	
+		<reward type="LootItem" id="questModsBZ2" ischosen="true" isfixed="true" value="16" />	
+	</insertAfter>
+	<remove xpath="/quests/quest[@id='challenge_imalumberjackandimokay']/requirement" />
+	
+</config>

@@ -1,0 +1,435 @@
+<configs>
+
+	<append xpath="/buffs">
+
+	<!-- Start Hardening Effekt -->
+	
+	<buff name="buffHardening3" hidden="false" name_key="buffHardening3" description_key="buffHardening3Desc" tooltip_key="buffHardening3Tooltip" remove_on_death="false" icon="ui_game_symbol_medical" icon_color="130,216,130" >
+		<stack_type value="ignore"/>
+		<duration value="2400"/> <!-- 2400 -->
+		<effect_group>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="10" tags="cold,heat" />
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked"/>
+		</effect_group>
+	</buff>		
+
+	<buff name="buffHardening2" hidden="false" name_key="buffHardening2" description_key="buffHardening2Desc" tooltip_key="buffHardening2Tooltip" remove_on_death="false" icon="ui_game_symbol_medical" icon_color="70,160,70" >
+		<stack_type value="ignore"/>
+		<duration value="2400"/> <!-- 2400 -->
+		<effect_group>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="25" tags="cold,heat" />
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="25"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.7" tags="buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffHardening3"/>
+		</effect_group>
+	</buff>		
+
+	<buff name="buffHardening" hidden="false" name_key="buffHardening" description_key="buffHardeningDesc" tooltip_key="buffHardeningTooltip" remove_on_death="false" icon="ui_game_symbol_medical" icon_color="30,114,30" >
+		<stack_type value="ignore"/>
+		<duration value="600"/> <!-- 600 -->
+		<effect_group>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="65" tags="cold,heat" />
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="65"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffHardening2"/>
+		</effect_group>
+	</buff>		
+
+	<!-- Second Wind -->
+	
+	<buff name="buffDyingOrSecondWindEffects" hidden="true" icon="ui_game_symbol_death" icon_color="192,22,22">
+		<stack_type value="ignore"/>
+		<duration value="60"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.999"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.999"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.999"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.999"/>
+
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="0.25"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="0.25"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="0.25"/>
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="0.25"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="0.25"/>
+			<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value="0.25"/>
+			<passive_effect name="KickDegreesVertical" operation="perc_add" value="0.25"/>
+			<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="0.25"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value="0.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_subtract" value="0.25"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="2" effect_name="Vibrant"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="2" effect_name="Cold"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="2" effect_name="Drunk"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="2" effect_name="Vibrant"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="2" effect_name="Cold"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="2" effect_name="Drunk"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HasBuff" buff="buffDyingOrSecondWind"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="-5"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-0.1"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="NotHasBuff" buff="buffDyingOrSecondWind"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="-80"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-20"/>
+		</effect_group>
+	</buff>		
+	
+	<buff name="buffDyingOrSecondWind" name_key="buffDyingOrSecondWind" description_key="buffDyingOrSecondWindDesc" tooltip_key="buffDyingOrSecondWindTooltip" icon="ui_game_symbol_death" icon_color="192,22,22" >
+		<stack_type value="ignore"/>
+		<duration value="15"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked,buffBurningElement,buffBurningMolotov"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffDyingOrSecondWindEffects"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="500" tags="cold,heat" />
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="999"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked,buffBurningElement,buffBurningMolotov"/>
+		</effect_group>
+	</buff>		
+
+	<buff name="buffSecondWindToLive" name_key="buffSecondWindToLive" description_key="buffSecondWindToLiveDesc" tooltip_key="buffSecondWindToLiveTooltip" icon="ui_game_symbol_medical" icon_color="22,132,22" >
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffDyingOrSecondWindEffects,buffInjuryStunned1,buffInjuryStunned2,buffIllInfection0,buffInjuryBleeding,buffInjuryUnconscious,buffShocked,buffBurningElement,buffBurningMolotov"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="70"/>
+			<passive_effect name="HealthLoss" operation="perc_subtract" value="0.6"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="0.6"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="buffDyingOrSecondWind"/>
+		</effect_group>
+	</buff>		
+
+	<buff name="buffCheckHealth" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<update_rate value=".1"/>
+		<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffDyingOrSecondWind">
+			<requirement name="StatCompareCurrent" target="self" stat="Health" operation="LTE" value="40"/>
+			<requirement name="NotHasBuff" buff="buffDyingOrSecondWindEffects"/>
+			<requirement name="NotHasBuff" buff="buffSecondWindToLive"/>
+		</triggered_effect>
+		</effect_group>
+	</buff>		
+	
+	<!-- Elemental crystals buffs -->
+
+	<buff name="buffBurningElementX" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/>
+		<duration value="10"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,3" value="1,1"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="3,6" value="1,3"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="6,10" value="3,5"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-200"/>
+		</effect_group>
+	</buff>		
+	<buff name="buffBurningElementX2" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/>
+		<duration value="12"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,3" value="1,3"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="3,6" value="3,7"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="6,12" value="7,15"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-200"/>
+		</effect_group>
+	</buff>		
+
+	<buff name="buffShockedX" hidden="true">
+		<damage_type value="electrical"/>
+		<stack_type value="replace"/>
+		<duration value="5"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-6"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.9"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="electric_fence_impact" />
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" target="self" sound="electric_fence_impact" />
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" target="self" sound="electric_fence_impact" />
+		</effect_group>
+	</buff>
+	<buff name="buffShockedX2" hidden="true">
+		<damage_type value="electrical"/>
+		<stack_type value="replace"/>
+		<duration value="6"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-9"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.9"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.9"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="electric_fence_impact" />
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" target="self" sound="electric_fence_impact" />
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" target="self" sound="electric_fence_impact" />
+		</effect_group>
+	</buff>
+		
+	<buff name="buffStunnedX" hidden="true">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="8"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-1"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.9999"/>
+		</effect_group>
+	</buff>
+	<buff name="buffStunnedX2" hidden="true">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="8"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-2"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.9999"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.9999"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffToxicEffect" hidden="true">
+		<damage_type value="radiation"/>
+		<stack_type value="replace"/>
+		<duration value="2"/>
+		<effect_group>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_critical" local_offset="0,0.45,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+		
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="MinibikeParticles" local_offset="0,0.45,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="MinibikeParticles" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="MinibikeParticles" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="MinibikeParticles" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="MinibikeParticles" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="MinibikeParticles" />
+
+<!-- can cause warnings
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" local_offset="0,-0.15,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+-->
+		</effect_group>
+	</buff>
+
+	<buff name="buffToxicX" hidden="true">
+		<damage_type value="radiation"/> <!-- toxic ? -->
+		<stack_type value="replace"/>
+		<duration value="4"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-5"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.4"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffToxicEffect"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_critical" local_offset="0,0.25,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_hotembersZombie" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+		</effect_group>
+	</buff>
+	<buff name="buffToxicX2" hidden="true">
+		<damage_type value="radiation"/> <!-- toxic ? -->
+		<stack_type value="replace"/>
+		<duration value="4"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-10"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.5"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.5"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.5"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.5"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffToxicEffect"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_critical" local_offset="0,0.25,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_critical" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_hotembersZombie" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+		</effect_group>
+	</buff>
+	<buff name="buffIntensifierX" hidden="true">
+		<damage_type value="radiation"/>
+		<stack_type value="replace"/>
+		<duration value="4"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-5"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.3"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.3"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_hotembersZombie" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+		</effect_group>
+	</buff>
+
+	<!-- sleeping buff bonus -->
+
+	<buff name="buffSleepingBonus" name_key="buffSleepingBonusName" description_key="buffSleepingBonusDesc" tooltip_key="buffSleepingBonusTooltip" icon="ui_game_symbol_map_bed" icon_color="255,128,0" tags="drug">
+		<stack_type value="ignore"/> <!-- stack? -->
+		<duration value="1"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.25"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="2"/>
+		</effect_group>
+	</buff>
+				
+	</append>
+
+	<!-- reducing near death trauma to only 30sec -->
+	
+	<set xpath="/buffs/buff[@name='buffNearDeathTrauma']/duration/@value">30</set>
+	
+	<!-- adding Start Hardening Effekt and SecondWind Check and Resolve -->
+	
+	<insertAfter xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffHoldBreathAiming1']">
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffHardening"/>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffCheckHealth"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffDyingOrSecondWind,buffCheckHealth">
+			<requirement name="StatCompareCurrent" target="self" stat="Health" operation="LTE" value="40"/>
+			<requirement name="NotHasBuff" buff="buffDyingOrSecondWindEffects"/>
+			<requirement name="NotHasBuff" buff="buffSecondWindToLive"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffSecondWindToLive">
+			<requirement name="HasBuff" buff="buffDyingOrSecondWind"/>
+		</triggered_effect>
+	</insertAfter>
+	
+	
+	
+	
+	<!-- adjusting thirsty buffs    *** removed for now; this got NRE sometimes!! ***
+	
+	<remove xpath="/buffs/buff[@name='buffStatusThirsty1']/effect_group"/>
+	<append xpath="/buffs/buff[@name='buffStatusThirsty1']">
+		<effect_group>
+			<requirements compare_type="or">
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.77"/>
+				<requirement name="StatCompare" stat="Water" operation="GT" value="75"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusThirsty1"/>
+		</effect_group>
+	</append>
+	<remove xpath="/buffs/buff[@name='buffStatusThirsty2']/effect_group"/>
+	<append xpath="/buffs/buff[@name='buffStatusThirsty2']">
+		<effect_group>
+			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".1"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".5">
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".26"/>
+				<requirement name="StatCompare" stat="Water" operation="LTE" value="25"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attStrength,attFortitude,attAgility,attPerception"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffStatusThirsty1"/>
+		</effect_group>
+		<effect_group>
+			<requirements compare_type="or">
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GTE" value="0.32"/>
+				<requirement name="StatCompare" stat="Water" operation="GTE" value="30"/>
+			</requirements>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusThirsty2"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusThirsty1"/>
+		</effect_group>	
+	</append>
+	<append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty1']">
+			<requirement name="StatCompare" stat="Water" operation="LTE" value="75"/>
+	</append>
+	<append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty2']">
+			<requirement name="StatCompare" stat="Water" operation="LTE" value="30"/>
+	</append>
+	
+	-->
+	
+</configs>

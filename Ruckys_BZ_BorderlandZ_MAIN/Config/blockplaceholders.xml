@@ -1,0 +1,24 @@
+<configs>
+
+	<!-- storeshelves, that's a modified copy from Stallionsdensstoreshelves -->
+
+	<append xpath="/blockplaceholders">
+		<placeholder name="storeShelving01">
+			<block name="storeShelving01Empty" prob="0.6"/>
+			<block name="storeShelving01Full" prob="0.4"/>
+		</placeholder>
+		<placeholder name="storeShelving01Double">
+			<block name="storeShelving01DoubleEmpty" prob="0.6"/>
+			<block name="storeShelving01DoubleFull" prob="0.4"/>
+		</placeholder>
+		<placeholder name="storeShelving01Top">
+			<block name="storeShelving01TopEmpty" prob="0.6"/>
+			<block name="storeShelving01TopFull" prob="0.4"/>
+		</placeholder>
+		<placeholder name="storeShelving01TopDouble">
+			<block name="storeShelving01TopDoubleEmpty" prob="0.6"/>
+			<block name="storeShelving01TopDoubleFull" prob="0.4"/>
+		</placeholder>
+	</append>
+
+</configs>

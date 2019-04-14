@@ -1,0 +1,14 @@
+<configs>
+	
+	<set xpath="/items/item[@name='meleeHandAnimalPup']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.2</set> <!-- 0.5 -->
+	<set xpath="/items/item[@name='meleeHandZombieStrongFeralPuker']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.2</set> <!-- 0.3 -->
+	<set xpath="/items/item[@name='meleeHandZombieStrongFeralPuker']/effect_group/passive_effect[@tags='buffInjuryStunned1']/@value">0.25</set> <!-- 0.4 -->
+	<set xpath="/items/item[@name='meleehandZombiePuke']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.2</set> <!-- 0.3 -->
+	<set xpath="/items/item[@name='meleehandZombiePuke']/effect_group/passive_effect[@tags='buffInjuryStunned1']/@value">0.25</set> <!-- 0.4 -->
+	<set xpath="/items/item[@name='meleehandZombieBurningSpitter']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.15</set> <!-- 0.2 -->
+	<set xpath="/items/item[@name='meleeHandZombieScreamerBoss']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.25</set> <!-- 0.4 -->
+	<set xpath="/items/item[@name='meleeHandZombieScreamerBoss']/effect_group/passive_effect[@tags='buffInjuryStunned1']/@value">0.3</set> <!-- 0.55 -->
+	<set xpath="/items/item[@name='meleehandZombieGunner']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.01</set> <!-- 0.5 !!! -->
+	<set xpath="/items/item[@name='GunVomitProjectile']/effect_group/passive_effect[@tags='buffInjuryBleeding']/@value">0.01</set> <!-- 0.5 !!! -->
+	
+</configs>

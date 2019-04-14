@@ -1,0 +1,19 @@
+<configs>
+
+	<append xpath="/materials">
+	<material id="MclothACME">
+		<property name="damage_category" value="cloth"/>
+		<property name="surface_category" value="cloth"/>
+		<property name="forge_category" value="cloth"/>
+		<property name="Hardness" type="float" value="1"/>
+		<property name="explosionresistance" value="100.00"/>
+		<property name="stepsound" value="cloth"/>
+		<property name="lightopacity" value="4"/>
+		<property name="stability_glue" value="400"/>
+		<property name="Mass" type="int" value="25"/>
+		<property name="MaxDamage" value="50000"/>
+		<property name="Experience" value="10"/>
+	</material>
+	</append>
+
+</configs>

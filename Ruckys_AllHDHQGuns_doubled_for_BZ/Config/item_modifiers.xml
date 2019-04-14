@@ -1,0 +1,2576 @@
+<configs>
+
+<!-- this is a copy of HDHQGuns to double the Guns! -->
+<!-- therefore copy all content here, then replace the following (WITH CASE SENSITIVE !!!!)
+	same as with items.xml
+-->
+<!-- then remove or comment the last lines about modShotgunSawedOffBarrel!! -->
+<!-- then add the vanilla weapon (copy&paste, HDHQ => gun, remove AnoBlue) -->
+
+		<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunPistol']">	
+      <item_property_overrides name="gunPistolEpic">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoBlue">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoCyan">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoGreen">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoMagenta">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoRed">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicGold">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicSilver">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicJade">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDesert">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDigital">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorJungle">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorWinter">
+        <property name="Sound_start" value="pistol_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gun44Magnum']">
+      <item_property_overrides name="gun44MagnumEpic">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoBlue">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoCyan">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoGreen">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoMagenta">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoRed">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicGold">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicSilver">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicJade">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDesert">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDigital">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorJungle">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorWinter">
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="0.8,0.8,1.5"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunAK47']">
+      <item_property_overrides name="gunAK47Epic">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="Sound_start" value="ak47_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+       <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="Sound_start" value="hunting_rifle_s_fire"/>
+        <property name="BarrelOffset" value="0,0,0.551"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="Sound_start" value="mp5_s_fire"/>
+        <property name="BarrelOffset" value="1,0,1"/>
+        <property name="BarrelScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="BarrelOffset" value="0,-0.02,0.2182"/>
+        <property name="BarrelScale" value="0.88,0.88,0.88"/>
+        <property name="Sound_start" value="sniperrifle_s_fire"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/item_property_overrides[@name='gunPumpShotgun']">
+      <item_property_overrides name="gunPumpShotgunEpic">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoBlue">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoCyan">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoGreen">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoMagenta">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoRed">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicGold">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicSilver">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicJade">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDesert">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDigital">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorJungle">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorWinter">
+        <property name="Sound_start" value="pump_shotgun_s_fire"/>
+        <property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+        <property name="BarrelScale" value="1.1,1.1,1.5"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gunPistol']">	
+      <item_property_overrides name="gunPistolEpic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gun44Magnum']">
+      <item_property_overrides name="gun44MagnumEpic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gunAK47']">
+      <item_property_overrides name="gunAK47Epic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="SideOffset" value="0,0.0108,0.0148"/>
+        <property name="SideScale" value="1.25,1.25,1.25"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="SideOffset" value="0,0.003,0.1674"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunPistol']">	
+      <item_property_overrides name="gunPistolEpic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gun44Magnum']">
+      <item_property_overrides name="gun44MagnumEpic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="0.75,0.75,0.75"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunAK47']">
+      <item_property_overrides name="gunAK47Epic">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+       <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="SideOffset" value="0,0.0061,0.2455"/>
+        <property name="SideScale" value="1,1,1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="SideOffset" value="0,0.0065,0"/>
+        <property name="SideScale" value="1.5,1.5,1.5"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="SideOffset" value="0,-0.0025,0.175"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunPumpShotgun']">
+      <item_property_overrides name="gunPumpShotgunEpic">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoBlue">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoCyan">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoGreen">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoMagenta">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoRed">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicGold">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicSilver">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicJade">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDesert">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDigital">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorJungle">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorWinter">
+        <property name="SideOffset" value="0,-0.0,0.41"/>
+        <property name="SideScale" value="1.12,1.12,1.12"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunPistol']">	
+      <item_property_overrides name="gunPistolEpic">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoBlue">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoCyan">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoGreen">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoRed">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicGold">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicSilver">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicJade">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDesert">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDigital">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorJungle">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorWinter">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gun44Magnum']">
+      <item_property_overrides name="gun44MagnumEpic">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoBlue">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoCyan">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoGreen">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoRed">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicGold">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicSilver">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicJade">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDesert">
+       <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDigital">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorJungle">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorWinter">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunAK47']">
+      <item_property_overrides name="gunAK47Epic">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.088,-.2"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+        <property name="ScopeScale" value="0.9,0.9,0.9"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='gunAK47']">	
+      <item_property_overrides name="gunAK47Epic">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.088,-.14"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0.4"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+    <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0012,0.098,-0.2405"/>
+        <property name="ScopeScale" value="0.8,0.8,0.8"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+        <property name="ScopeScale" value="1.6,1.6,1.6"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+ 
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='gunAK47']">	
+      <item_property_overrides name="gunAK47Epic">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0018,0,0.015"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,-0.022,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="1,1,1"/>
+        <property name="ScopeCameraOffset" value="0,0,0"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunPistol']">	
+      <item_property_overrides name="gunPistolEpic">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicAnoRed">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicGold">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicSilver">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicJade">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDesert">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPistolEpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.08,-0.01"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.04,-0.1"/>
+      </item_property_overrides>
+		</insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gun44Magnum']">
+      <item_property_overrides name="gun44MagnumEpic">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicAnoRed">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicGold">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicSilver">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicJade">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDesert">
+       <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQ44MagnumEpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.11,0.015"/>
+        <property name="ScopeScale" value="0.5,0.5,0.5"/>
+        <property name="ScopeCameraOffset" value="0,-.035,0.025"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunAK47']">
+      <item_property_overrides name="gunAK47Epic">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicAnoRed">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicGold">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicSilver">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicJade">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDesert">
+       <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQAK47EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.08,-0.2035"/>
+        <property name="ScopeScale" value="0.63,0.63,0.63"/>
+        <property name="ScopeCameraOffset" value="0,-.019,.2"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunHuntingRifle']">
+      <item_property_overrides name="gunHuntingRifleEpic">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoBlue">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoCyan">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoGreen">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoMagenta">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicAnoRed">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicGold">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicSilver">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicJade">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDesert">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicCamoDigital">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorJungle">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQHuntingRifleEpicArmorWinter">
+        <property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.018,-0.1"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunSMG5']">
+      <item_property_overrides name="gunSMG5Epic">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicAnoRed">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicGold">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicSilver">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicJade">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQSMG5EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0,0"/>
+        <property name="ScopeScale" value="0.55,0.55,0.55"/>
+        <property name="ScopeCameraOffset" value="-.00005,-.017,.15"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunMR10']">
+      <item_property_overrides name="gunMR10Epic">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoBlue">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoCyan">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoGreen">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoMagenta">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicAnoRed">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicGold">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicSilver">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicJade">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDesert">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicCamoDigital">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorJungle">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQMR10EpicArmorWinter">
+        <property name="ScopeOffset" value="0,0.073,-0.13"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-.0147,-0.05"/>
+      </item_property_overrides>
+    </insertAfter>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunPumpShotgun']">
+      <item_property_overrides name="gunPumpShotgunEpic">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoBlue">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoCyan">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoGreen">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoMagenta">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoRed">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicGold">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicSilver">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicJade">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDesert">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDigital">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorJungle">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorWinter">
+        <property name="ScopeOffset" value="0.00,0.056,0.05"/>
+        <property name="ScopeScale" value="0.7,0.7,0.7"/>
+        <property name="ScopeCameraOffset" value="0,-0.0375,-0.15"/>
+      </item_property_overrides>
+    </insertAfter>
+    
+    
+    <!-- change below -->
+    <!--
+    <set xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']/item_property_overrides[@name='*']/@name">gunPumpShotgun</set>
+    <insertAfter xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']/item_property_overrides[@name='gunPumpShotgun']">	
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoBlue">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFAnoBlue"/>
+		</item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoCyan">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFAnoCyan"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoGreen">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFAnoGreen"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoMagenta">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFAnoMagenta"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicAnoRed">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFAnoRed"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicGold">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFGold"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicSilver">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFSilver"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicJade">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFJade"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDesert">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFCamoDesert"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicCamoDigital">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFCamoDigital"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorJungle">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFArmorJungle"/>
+      </item_property_overrides>
+      <item_property_overrides name="HDHQPumpShotgunEpicArmorWinter">
+			<property name="HandMeshfile" value="#@modfolder(HDHQGuns):Resources/HDHQGuns.unity3d?HDHQSAWEDOFFArmorWinter"/>
+      </item_property_overrides>
+		</insertAfter>
+	-->
+</configs>

@@ -1,0 +1,419 @@
+<configs>
+
+	<!-- Reset every 1 Day -->
+
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">1</set> <!-- 3 -->
+	<set xpath="/traders/trader_info[@id='4']/@reset_interval">1</set> <!-- 1 -->
+
+	<!-- We use nr 4 for all our standard needs -->
+	
+	<set xpath="/traders/trader_info[@id='1']/@open_time">0:01</set>
+	<set xpath="/traders/trader_info[@id='1']/@close_time">23:59</set>
+	<set xpath="/traders/trader_info[@id='1']/@min_inventory">40</set> <!-- 40 -->
+	<set xpath="/traders/trader_info[@id='1']/@max_inventory">80</set> <!-- 80 -->
+	<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">40</set> <!-- 20 -->
+	<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">80</set> <!-- 20 -->
+	<setattribute xpath="/traders/trader_info[@id='1']" name="override_buy_markup">2.2</setattribute> <!-- buy prize -->
+	<setattribute xpath="/traders/trader_info[@id='1']" name="override_sell_markup">0.065</setattribute> <!-- sell prize --> <!-- use this for balancing! -->
+
+	<set xpath="/traders/trader_info[@id='4']/@min_inventory">40</set> <!-- 6 -->
+	<set xpath="/traders/trader_info[@id='4']/@max_inventory">80</set> <!-- 13 -->
+	<set xpath="/traders/trader_info[@id='4']/@min_items_swapped">40</set> <!-- 6 -->
+	<set xpath="/traders/trader_info[@id='4']/@max_items_swapped">80</set> <!-- 13 -->
+	<set xpath="/traders/trader_info[@id='4']/@allow_sell">true</set> <!-- false -->
+	<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">2.2</set> <!-- buy prize -->
+	<setattribute xpath="/traders/trader_info[@id='4']" name="override_sell_markup">0.065</setattribute> <!-- sell prize --> <!-- use this for balancing! -->
+
+	<set xpath="/traders/trader_info[@id='4']/trader_items/@count">40</set> <!-- 10 -->
+	<set xpath="/traders/trader_info[@id='4']/trader_items/item[@group='foodVending']/@group">BZTraderItemList</set>
+	
+	
+	<!-- copied and syntax checked from loot.xml : /lootcontainers/lootgroup __to__ /traders/trader_item_groups/trader_item_group -->
+		
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT1']/item[@name='modGunDuckbill']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT1']/item[@name='modGunMeleeTheHunter']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT1']/item[@name='modShotgunSawedOffBarrel']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT2']/item[@name='modGunCrippleEm']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT3']/item[@name='modGunBowPolymerString']"/>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT1']">
+		<item name="modGunElementIce" prob="0.2"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT2']">
+		<item name="modGunAdvancedBarrel"/>
+		<item name="modGunMagazineExtenderII"/>
+		<item name="modGunMagazineExtenderMagnum"/>
+		<item name="modGunMagazineExtenderHR"/>
+		<item name="modGunMagazineExtenderSG"/>
+		<item name="modGunElementFire" prob="0.15"/>
+		<item name="modGunElementElec" prob="0.1"/>
+		<item name="modGunElementToxic" prob="0.1"/>
+		<item name="modGunConverterCamoDigital" prob="0.25"/>
+		<item name="modGunConverterArmorJungle" prob="0.2"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT3']">
+		<item name="modArmorShield" prob="0.1"/>
+		<item name="modGunConverterTotalCamoDigital" prob="0.2"/>
+		<item name="modGunConverterTotalArmorJungle" prob="0.15"/>
+	</append>
+	
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT3']">
+	<trader_item_group name="modGunT1S" count="1">
+		<item name="modGunChokeSchematic"/>
+		<item name="modGunBipodSchematic"/>
+		<item name="modGunFlashlightSchematic"/>
+		<item name="modGunForegripSchematic"/>
+		<item name="modGunMagazineExtenderSchematic"/>
+		<item name="modGunScopeSmallSchematic"/>
+		<item name="modGunTriggerGroupSemiSchematic"/>
+	</trader_item_group>
+
+	<trader_item_group name="modGunT2S" count="1">
+		<item name="modGunBarrelExtenderSchematic"/>
+		<item name="modGunLaserSightSchematic"/>
+		<item name="modGunReflexSightSchematic"/>
+		<item name="modGunRetractingStockSchematic"/>
+		<item name="modGunScopeMediumSchematic"/>
+		<item name="modGunTriggerGroupBurstSchematic"/>
+		<item name="modGunAdvancedBarrelSchematic"/>
+		<item name="modGunMagazineExtenderIISchematic"/>
+		<item name="modGunMagazineExtenderMagnumSchematic"/>
+		<item name="modGunMagazineExtenderHRSchematic"/>
+		<item name="modGunMagazineExtenderSGSchematic"/>
+		<item name="modGunSoundSuppressorSilencerSchematic"/>
+	</trader_item_group>
+
+	<trader_item_group name="modGunT3S" count="1">
+		<item name="modGunRodAndSpringSchematic"/>
+		<item name="modGunScopeLargeSchematic"/>
+		<item name="modGunTriggerGroupAutomaticSchematic"/>
+		<item name="modArmorShieldSchematic"/>
+	</trader_item_group>
+
+	<trader_item_group name="modArmorT1S" count="1">
+		<item name="modArmorHelmetLightSchematic"/>
+		<item name="modArmorInsulatedLinerSchematic"/>
+		<item name="modArmorCoolingMeshSchematic"/>
+		<item name="modArmorReinforcedPaddingSchematic"/>
+		<item name="modArmorScrapPlatingSchematic"/>
+		<item name="modArmorStoragePocketSchematic"/>
+		<item name="modArmorImprovedFittingsSchematic"/>
+	</trader_item_group>
+
+	<trader_item_group name="modArmorT2S" count="1">
+		<item name="modArmorWaterPurifierSchematic"/>
+		<item name="modArmorImpactBracingSchematic"/>
+		<item name="modArmorPlasticPlatingSchematic"/>
+		<item name="modArmorIronPlatingSchematic"/>
+		<item name="modArmorMuffledConnectorsSchematic"/>
+		<item name="modArmorDoubleStoragePocketSchematic"/>
+		<item name="modArmorCustomizedFittingsSchematic"/>
+	</trader_item_group>
+
+	<trader_item_group name="modArmorT3S" count="1">
+		<item name="modArmorBandolierSchematic"/>
+		<item name="modArmorTripleStoragePocketSchematic"/>
+		<item name="modArmorMilitaryPlatingSchematic"/>
+		<item name="modArmorSteelPlatingSchematic"/>
+		<item name="modArmorAdvancedMuffledConnectorsSchematic"/>
+	</trader_item_group>
+	</insertAfter>
+	
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='modAllT5SecretStash']">
+	<trader_item_group name="modAllT5SecretStashS" count="1">
+		<item group="modGunT1S" prob="0.65"/>
+		<item group="modArmorT1S" prob="0.25"/>
+		<item group="modGunT2S" prob="0.5"/>
+		<item group="modArmorT2S" prob="0.2"/>
+		<item group="modGunT3S" prob="0.35"/>
+		<item group="modArmorT3S" prob="0.15"/>
+		<item name="cntHYPERIONMSuitcaseLocked" prob="0.1" count="1,2"/>
+	</trader_item_group>
+	</insertAfter>
+
+	<!-- end -->
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceClayLump']/@count">50,500</set>
+	
+	<remove xpath="/traders/trader_info/tier_items/item[@name='cntVendingMachine']" />
+	<remove xpath="/traders/trader_info/tier_items/item[@group='modMeleeT1']" />
+
+	<!-- that's only because we replace Mods with the Schematics as the prize is completely wrong! -->
+	<set xpath="/traders/trader_info/trader_items/item[@group='modAllT1SecretStash']/@group">modAllT5SecretStashS</set>
+	<set xpath="/traders/trader_info/tier_items/item[@group='modAllT2SecretStash']/@group">modAllT5SecretStashS</set>
+	<set xpath="/traders/trader_info/tier_items/item[@group='modAllT3SecretStash']/@group">modAllT5SecretStashS</set>
+	<set xpath="/traders/trader_info/tier_items/item[@group='modAllT4SecretStash']/@group">modAllT5SecretStashS</set>
+	<set xpath="/traders/trader_info/tier_items/item[@group='modAllT5SecretStash']/@group">modAllT5SecretStashS</set>
+
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+
+	<trader_item_group name="moreMedics">
+		<item name="medicalFirstAidKit" count="3,5"/>
+		<item name="drugAntibiotics" count="2,3"/>
+		<item name="drugPainkillers" count="10,15"/>
+		<item name="medicalFirstAidBandage" count="10,15"/>
+		<item name="medicalBandage" count="20,25"/>
+		<item name="drugVitamins" count="3,5"/>
+		<item name="drinkJarGrainAlcohol" count="3,5"/>
+		<item name="medicalSplint" count="3,5"/>
+	</trader_item_group>
+
+	<trader_item_group name="HDHQGuns" count="1">
+		<item name="resourceRepairKit" count="30,100"/>
+
+		<item name="HDHQPistolCamoDigital" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolArmorJungle" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolArmorWinter" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolCamoDesert" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolAnoBlue" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolAnoCyan" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolAnoRed" prob=".9" quality="1,4"/>
+		<item name="HDHQPistolJade" prob=".9" quality="1,4"/>
+		<item name="HDHQ44MagnumCamoDigital" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumArmorJungle" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumArmorWinter" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumCamoDesert" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumAnoBlue" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumAnoCyan" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumAnoRed" prob=".4" quality="1,4"/>
+		<item name="HDHQ44MagnumJade" prob=".4" quality="1,4"/>
+		<item name="HDHQPumpShotgunCamoDigital" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunArmorJungle" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunArmorWinter" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunCamoDesert" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunAnoBlue" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunAnoCyan" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunAnoRed" prob=".8" quality="1,4"/>
+		<item name="HDHQPumpShotgunJade" prob=".8" quality="1,4"/>
+		<item name="HDHQSMG5CamoDigital" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5ArmorJungle" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5ArmorWinter" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5CamoDesert" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5AnoBlue" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5AnoCyan" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5AnoRed" prob=".7" quality="1,4"/>
+		<item name="HDHQSMG5Jade" prob=".7" quality="1,4"/>
+		<item name="HDHQAK47CamoDigital" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47ArmorJungle" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47ArmorWinter" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47CamoDesert" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47AnoBlue" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47AnoCyan" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47AnoRed" prob=".5" quality="1,4"/>
+		<item name="HDHQAK47Jade" prob=".5" quality="1,4"/>
+		<item name="HDHQHuntingRifleCamoDigital" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleArmorJungle" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleArmorWinter" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleCamoDesert" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleAnoBlue" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleAnoCyan" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleAnoRed" prob=".6" quality="1,4"/>
+		<item name="HDHQHuntingRifleJade" prob=".6" quality="1,4"/>
+		<item name="HDHQMR10CamoDigital" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10ArmorJungle" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10ArmorWinter" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10CamoDesert" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10AnoBlue" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10AnoCyan" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10AnoRed" prob=".3" quality="1,4"/>
+		<item name="HDHQMR10Jade" prob=".3" quality="1,4"/>
+
+		<item name="HDHQPistolCamoDigital" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolArmorJungle" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolArmorWinter" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolCamoDesert" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolAnoBlue" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolAnoCyan" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolAnoRed" prob=".4" quality="5,6"/>
+		<item name="HDHQPistolJade" prob=".4" quality="5,6"/>
+		<item name="HDHQ44MagnumCamoDigital" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumArmorJungle" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumArmorWinter" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumCamoDesert" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumAnoBlue" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumAnoCyan" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumAnoRed" prob=".05" quality="5,6"/>
+		<item name="HDHQ44MagnumJade" prob=".05" quality="5,6"/>
+		<item name="HDHQPumpShotgunCamoDigital" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunArmorJungle" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunArmorWinter" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunCamoDesert" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunAnoBlue" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunAnoCyan" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunAnoRed" prob=".3" quality="5,6"/>
+		<item name="HDHQPumpShotgunJade" prob=".3" quality="5,6"/>
+		<item name="HDHQSMG5CamoDigital" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5ArmorJungle" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5ArmorWinter" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5CamoDesert" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5AnoBlue" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5AnoCyan" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5AnoRed" prob=".2" quality="5,6"/>
+		<item name="HDHQSMG5Jade" prob=".2" quality="5,6"/>
+		<item name="HDHQAK47CamoDigital" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47ArmorJungle" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47ArmorWinter" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47CamoDesert" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47AnoBlue" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47AnoCyan" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47AnoRed" prob=".1" quality="5,6"/>
+		<item name="HDHQAK47Jade" prob=".1" quality="5,6"/>
+		<item name="HDHQHuntingRifleCamoDigital" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleArmorJungle" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleArmorWinter" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleCamoDesert" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleAnoBlue" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleAnoCyan" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleAnoRed" prob=".15" quality="5,6"/>
+		<item name="HDHQHuntingRifleJade" prob=".15" quality="5,6"/>
+		<item name="HDHQMR10CamoDigital" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10ArmorJungle" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10ArmorWinter" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10CamoDesert" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10AnoBlue" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10AnoCyan" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10AnoRed" prob=".03" quality="5,6"/>
+		<item name="HDHQMR10Jade" prob=".03" quality="5,6"/>
+	</trader_item_group>
+
+	<trader_item_group name="BZammo">
+		<item name="ammo9mmBullet" count="100,300"/>
+		<item name="ammo9mmBulletSteel" count="100,300"/>
+		<item name="ammo762mmBulletFMJ" count="100,300"/>
+		<item name="ammo762mmBulletFMJSteel" count="100,300"/>
+		<item name="ammo44MagnumBullet" count="20,100" prob="0.5"/>
+		<item name="ammo44MagnumBulletSteel" count="20,100" prob="0.5"/>
+		<item name="ammoShotgunShell" count="50,200"/>
+		<item name="ammoShotgunSlug" count="10,50" prob="0.2"/>
+		<item name="ammoRocketHE" count="1,4" prob="0.01"/>
+		<item name="ammoRocketFrag" count="1,4" prob="0.01"/>
+		<item name="thrownAmmoPipeBomb" count="5,20" prob="0.4"/>
+		<item name="thrownDynamite" count="1,5" prob="0.1"/>
+	</trader_item_group>
+
+	<trader_item_group name="BZammoSupplies">
+		<item name="resourceBulletCasing" count="80,200"/>
+		<item name="resourceBulletTip" count="100,200"/>
+		<item name="resourceBuckshot" count="50,100"/>
+		<item name="resourceGunPowder" count="200,400"/>
+		<item name="resourcePaper" count="10,50"/>
+		<item name="ammoGasCan" count="300,800"/>
+	</trader_item_group>
+
+	<trader_item_group name="VanillaGuns">
+		<item name="resourceRepairKit" count="30,100"/>
+
+		<item name="gunPistol" prob=".9" quality="1,4"/>
+		<item name="gun44Magnum" prob=".4" quality="1,4"/>
+		<item name="gunPumpShotgun" prob=".8" quality="1,4"/>
+		<item name="gunSMG5" prob=".7" quality="1,4"/>
+		<item name="gunAK47" prob=".5" quality="1,4"/>
+		<item name="gunHuntingRifle" prob=".6" quality="1,4"/>
+		<item name="gunMR10" prob=".3" quality="1,4"/>
+		<!--<item name="gunRocketLauncher" prob=".05" quality="1,4"/>-->
+
+		<item name="gunPistol" prob=".4" quality="5,6"/>
+		<item name="gun44Magnum" prob=".05" quality="5,6"/>
+		<item name="gunPumpShotgun" prob=".3" quality="5,6"/>
+		<item name="gunSMG5" prob=".2" quality="5,6"/>
+		<item name="gunAK47" prob=".1" quality="5,6"/>
+		<item name="gunHuntingRifle" prob=".15" quality="5,6"/>
+		<item name="gunMR10" prob=".03" quality="5,6"/>
+		<!--<item name="gunRocketLauncher" prob=".01" quality="5,6"/>-->
+	</trader_item_group>
+
+	<trader_item_group name="BZGunsCompleteList">
+		<item group="VanillaGuns" prob=".9" count="2,3"/>
+		<item group="HDHQGuns" prob=".5" count="2,3"/>
+	</trader_item_group>
+
+	</insertBefore>
+
+
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='minibikeParts']">
+
+	<trader_item_group name="bicycleParts" count="1">
+		<item name="vehicleBicycleChassis"/>
+		<item name="vehicleBicycleHandlebars"/>
+		<item name="vehicleWheels"/>
+	</trader_item_group>
+
+	<trader_item_group name="motorcycleParts" count="1">
+		<item name="vehicleMotorcycleChassis"/>
+		<item name="vehicleMotorcycleHandlebars"/>
+		<item name="vehicleWheels"/>
+	</trader_item_group>
+
+	<trader_item_group name="4x4Parts" count="1">
+		<item name="vehicle4x4TruckChassis"/>
+		<item name="vehicle4x4TruckAccessories"/>
+		<item name="vehicleWheels"/>
+	</trader_item_group>
+
+	<trader_item_group name="gyroCopterParts" count="1">
+		<item name="vehicleGyroCopterChassis"/>
+		<item name="vehicleGyroCopterAccessories"/>
+		<item name="vehicleWheels"/>
+	</trader_item_group>
+
+	</insertAfter>
+	
+	
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']">
+
+	<trader_item_group name="vehicleParts">
+		<item group="bicycleParts" prob="10"/>
+		<item group="minibikeParts" prob="7"/>
+		<item group="motorcycleParts" prob="5"/>
+		<item group="4x4Parts" prob="3"/>
+		<item group="gyroCopterParts" prob="1"/>
+	</trader_item_group>
+
+	</insertBefore>
+
+
+	<!-- that's the main complete VendingMachine item list -->
+	
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsHigh']">
+
+	<trader_item_group name="BZTraderItemList">
+	
+		<item group="BZammo"         count="2,3"/>
+		<item group="BZammoSupplies" count="2,3"/>
+		<item group="BZGunsCompleteList"  count="1,2"/> <!-- std 1,2 test 4,5 -->
+		<item group="modAllT5SecretStashS" count="2,3"/> <!-- std 2,3 test 7,9 --> <!-- S is Schematics version as a workaround for prize problems for mods! -->
+		<item group="vehicleParts" count="1,2"/>
+<!-- -->
+		<item group="generalResources" count="7,9"/>
+		<item group="lightArmor" count="1,2"/>
+		<item group="heavyArmor" count="1,2"/>
+		<item group="moreMedics" count="3,4"/>
+		<item group="rareMedicine" count="2,3"/>
+		<item group="medicine" count="3,4"/>
+		<item group="rareTools" count="1,2"/>
+		<item group="questChallenge" count="3,5"/>
+		<item group="traderElectrical" count="1,2"/>
+		<item group="stashOnlyItemsHigh" count="1,2"/>	
+		<item group="foodAll" count="1,2"/>
+<!-- -->
+<!--
+		<item group="clothes" count="1,2"/>
+		<item group="constructionSupplies" count="1,2"/>
+		<item group="workstations" count="1,2"/>
+		<item group="perkMagazines" count="1,2"/>
+-->
+	</trader_item_group>
+	
+	</insertAfter>
+	
+	<!-- we're removing (standard) workstations from the Traders! -->
+	
+	<!--<remove xpath="/traders/trader_info/trader_items/item[@group='workstations']" /> no, as we add laptop and the small workbench -->
+	
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']/item" />
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']">
+		<item name="smallWorkbench"/>
+		<item name="laptop"/>
+	</append>
+
+</configs>

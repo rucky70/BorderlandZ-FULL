@@ -1,0 +1,124 @@
+<configs>
+
+<!-- this is a copy of HDHQGuns to double the Guns! -->
+<!-- therefore copy all content here, then replace the following (WITH CASE SENSITIVE !!!!)
+	same as with items.xml
+-->
+<!-- additional replace 0 01 => 0.001 -->
+<!-- then add the vanilla weapon (copy&paste, HDHQ => gun, remove AnoBlue) -->
+
+    <!--HDHQ GUNS -->
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/@count">2</set>
+    <set xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/@count">2</set>
+    
+		<insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsPistol+ammo']/item[@name='gunPistol']">
+      <item name="gunPistolEpic" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicGold" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicJade" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQPistolEpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsMagnum+ammo']/item[@name='gun44Magnum']">
+      <item name="gun44MagnumEpic" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicGold" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicJade" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQ44MagnumEpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsShotgun+ammo']/item[@name='ammoShotgunShell']">
+      <item name="gunPumpShotgunEpic" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicGold" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicJade" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQPumpShotgunEpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsMP5+ammo']/item[@name='ammo9mmBullet']">
+      <item name="gunSMG5Epic" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicGold" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicJade" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQSMG5EpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsAK47+ammo']/item[@name='ammo762mmBulletFMJ']">
+      <item name="gunAK47Epic" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicGold" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicJade" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQAK47EpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsHuntingRifle+ammo']/item[@name='ammo762mmBulletFMJ']">
+      <item name="gunHuntingRifleEpic" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicGold" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicJade" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQHuntingRifleEpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='weaponsSniperRifle+ammo']/item[@name='ammo762mmBulletFMJ']">
+      <item name="gunMR10Epic" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicAnoBlue" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicAnoCyan" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicAnoGreen" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicAnoMagenta" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicAnoRed" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicGold" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicSilver" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicJade" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicCamoDigital" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicCamoDesert" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicArmorJungle" count="1" prob="0.001"/>
+      <item name="HDHQMR10EpicArmorWinter" count="1" prob="0.001"/>
+		</insertAfter>
+</configs>

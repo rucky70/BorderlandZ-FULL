@@ -1,0 +1,5 @@
+quest_ActionSkill,,Quest Info,KgNone,Action Skill,,,,
+quest_ActionSkill_offer,,Quest Info,KgNone,"Welcome Agent!\nNow choose your Action Skill!\n\n- Axton the Commando (Auto Turret)\n- Salvadore the Gunzerker (Guns blazing)\n- Brick as Himself (Berserk)\n- Mordecai the Hunter (Bloodwing)\n- Zero as a Number (Assassin)\n\nGet the desired Pill out of your Pill box (via crafting)",,,,
+quest_ActionSkill_name,,Quest Info,KgNone,Action Skill,,,,
+quest_ActionSkill_description,,Quest Info,KgNone,"Welcome Agent!\nNow choose your Action Skill!\n\n- Axton the Commando (Auto Turret)\n- Salvadore the Gunzerker (Guns blazing)\n- Brick as Himself (Berserk)\n- Mordecai the Hunter (Bloodwing)\n- Zero as a Number (Assassin)\n\nGet the desired Pill out of your Pill box (via crafting)",,,,
+quest_ActionSkill_subtitle,,Quest Info,KgNone,Choose Your special Ability,,,,
